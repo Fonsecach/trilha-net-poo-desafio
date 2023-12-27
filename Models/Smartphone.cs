@@ -7,9 +7,8 @@ namespace DesafioPOO.Models
         public string IMEI { get; set; }
         public int Memoria { get; set; }
 
-        public Smartphone(){
+        public string nomeApp {get; set;}
 
-        }
         
         public void Ligar()
         {
