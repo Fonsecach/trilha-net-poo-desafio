@@ -24,7 +24,7 @@ namespace DesafioPOO.Models
 
                 if (confirmacao == "Y")
                 {
-                    Console.WriteLine("\n-= Instalando o aplicativo =-");
+                    Console.WriteLine($"\n-= Instalando {nomeApp} =-");
                     Console.WriteLine($"\nAplicativo {nomeApp} instalado com sucesso!");
 
                 }

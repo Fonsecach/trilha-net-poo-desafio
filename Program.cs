@@ -7,7 +7,7 @@ public class Program
 
         Nokia nokia = new Nokia();
 
-
+        Console.WriteLine("Smartphone Nokia");
         nokia.GetModelo();
         nokia.GetNumero();
         nokia.GetIMEI();
@@ -21,6 +21,8 @@ public class Program
         nokia.ReceberLigacao();
 
         Iphone iphone = new Iphone();
+
+        Console.WriteLine("Smartphone Iphone");
 
         iphone.GetModelo();
         iphone.GetNumero();
