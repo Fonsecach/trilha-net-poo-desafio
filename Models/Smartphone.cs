@@ -9,7 +9,6 @@ namespace DesafioPOO.Models
 
         public string nomeApp {get; set;}
 
-        
         public void Ligar()
         {
             Console.WriteLine("Ligando...");
@@ -19,7 +18,7 @@ namespace DesafioPOO.Models
         {
             Console.WriteLine("Recebendo ligação...");
         }
-
         public abstract void InstalarAplicativo(string nomeApp);
     }
+
 }

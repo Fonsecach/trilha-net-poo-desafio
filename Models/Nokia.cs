@@ -1,8 +1,9 @@
 
+using System.ComponentModel;
+
 namespace DesafioPOO.Models
 {
 
-    // TODO: Herdar da classe "Smartphone"
     public class Nokia : Smartphone
     {
 
@@ -10,7 +11,6 @@ namespace DesafioPOO.Models
         {
 
         }
-        // TODO: Sobrescrever o método "InstalarAplicativo"
         public override void InstalarAplicativo(string nomeApp)
         {
             string confirmacao = "";
@@ -24,17 +24,17 @@ namespace DesafioPOO.Models
 
                 if (confirmacao == "Y")
                 {
-                    Console.WriteLine("-= Instalando o aplicativo =-");
-                    Console.WriteLine($"Aplicativo {nomeApp} instalado com sucesso!");
+                    Console.WriteLine("\n-= Instalando o aplicativo =-");
+                    Console.WriteLine($"\nAplicativo {nomeApp} instalado com sucesso!");
 
                 }
-                 else
+                else
                 {
                     Console.WriteLine("Operação cancelada!");
                 }
 
                 confirmacao = "N";
-                Console.WriteLine("Deseja inserir outro aplicativo? (Y/N)");
+                Console.WriteLine("\nDeseja inserir outro aplicativo? (Y/N)");
                 confirmacao = Console.ReadLine().ToUpper();
 
                 if (confirmacao == "N")
@@ -43,5 +43,38 @@ namespace DesafioPOO.Models
                 }
             } while (confirmacao == "Y");
         }
+
+        public string GetNumero()
+        {
+            Console.WriteLine("Insira o número do celular: ");
+            return Numero = Console.ReadLine();
+        }
+
+        public string GetModelo()
+        {
+            Console.WriteLine("Insira o modelo: ");
+            return Modelo = Console.ReadLine();
+        }
+
+        public string GetIMEI()
+        {
+            Console.WriteLine("Insira o número do IMEI: ");
+            return IMEI = Console.ReadLine();
+        }
+
+        public int GetMemoria()
+        {
+            Console.WriteLine("Insira a memoria em GB: ");
+            return Memoria = int.Parse(Console.ReadLine());
+        }
+
+        public void ExibirDados()
+        {
+            Console.WriteLine($"Modelo: {Modelo}");
+            Console.WriteLine($"Numero: {Numero}");
+            Console.WriteLine($"IMEI: {IMEI}");
+            Console.WriteLine($"Memoria: {Memoria} Gbs");
+        }
+
     }
 }
